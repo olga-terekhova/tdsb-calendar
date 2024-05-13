@@ -4,22 +4,38 @@ Utilities to manage calendars and schedules for TDSB (Toronto District School Bo
 ## TDSB_Calendar_Elementary.ipynb
 An utility that marks up a list of dates in a school year with labels "Day 1", "Day 2", "Day 3", "Day 4", "Day 5" and shares it as iCalendar files.  
 
-This labeling is a consecutive day numbering system employed by TDSB which cannot be derived directly from dates or days of week.  
-The TDSB day numbers start with "Day 1" on the 1st day of school and cycle through 1-5 until the end of a school year.  
-The numbers shift each time there is a holiday, a school break, or a PA day, so there's never a gap in the consecutive pattern.  
-The numbers might also shift due to some force majeure days, like snow days. We've had none so far in 2024, so I'm not sure how they're handled.   
+### Description of the TDSB calendar    
+This labeling is a **consecutive day numbering system** employed by TDSB for elementary schools. It **cannot be derived** directly from **dates** or **days of week**.  
+The calendar generating **algorithm** is as follows:  
+- The TDSB day numbers start with "Day 1" on the 1st day of school and cycle through 1-5 until the end of a school year.  
+- The numbers shift each time there is a holiday, a school break, or a PA day, so there's never a gap in the 1-5 sequence.  
 
-TDSB does not publish this numbering cycle for wide access and does not provide the way to easily and quickly look up the day number.  
-Individual schools or teachers can send out this info in a form of a locally prepared PDF with a calendar view of a year or an upcoming month.   
-However, TDSB provides all input data on the calendar page at https://www.tdsb.on.ca/About-Us/School-Year-Calendar.   
+Each day number has a schedule of activities associated to it. For example, library can be on Day 1, gym on Day 2, music on Day 3.  
+Families might want to know what's on agenda today!  
 
-This utility uses the TDSB data as a source, generates the list of labeled dates and exports it.  
-When there's a daily schedule associated with each of the five days, the utility can propagate it to all days in a selected timeframe.    
+### Ways to look up the calendar
+TDSB **does not make** this numbering cycle widely **accessible** and **does not provide** the way to easily and quickly **look up** the day number.  
+Individual schools or teachers can provide this info in a form of a locally prepared PDF with a calendar view of a year or an upcoming month. It can look like this:  
 
-The script generates .ics files which can be uploaded into calendars that support iCalendar.  
+<p align="center">
+  <img src="pics/tdsb-sample-print-calendar.png" width="500">
+</p>  
+
+This option is mostly suitable for physical printing and pinning.  
+It **cannot be integrated** into calendar apps.  
+
+### Automated generation of the TDSB calendar
+TDSB **provides** all **input data** on the calendar page at https://www.tdsb.on.ca/About-Us/School-Year-Calendar: days of school start and school end, lists of holidays, school breaks, and PA days.  
+The sequence can be easily derived based on the input data.    
+
+This utility uses the TDSB data as a source, **generates** the list of labeled calendar dates and **exports** it.  
+When there's a **daily schedule** associated with each of the five days, the utility can **propagate** it to all days in a selected timeframe.    
+
+### Export to calendar management applications  
+The script generates .ics files which can be uploaded into calendars that support **iCalendar**, like Google Calendar.  
 I recommend creating a separate calendar for each file:  
-- it's easier to toggle off a calendar from view so that the main calendar view doesn't become cluttered
-- it's easier to update the calendars, just delete a calendar, create a new one with the same name and re-import the .ics file
+- It's easier to **toggle on or off** a calendar in a view so that the main calendar view doesn't become cluttered.
+- It's easier to **update** the calendars. Just delete a calendar, create a new one with the same name, and re-import an updated .ics file.
 
 The result in Google Calendar:  
 <img src="pics/tdsb-schedule-example.png" width="252">
