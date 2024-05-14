@@ -10,7 +10,9 @@ It **cannot be derived** directly from **dates** or **days of week**.
 
 The calendar generating **algorithm** is as follows:  
 - The TDSB day numbers start with "Day 1" on the 1st day of school and cycle through 1-5 until the end of a school year.  
-- The numbers shift each time there is a holiday, a school break, or a PA day, so there's never a gap in the 1-5 sequence.  
+- The numbers shift each time there is a holiday, a school break, or a PA day, so there's never a gap in the 1-5 sequence.
+
+The idea behind this calendar is to slice a school year into familiar 5 slots with activities (like days of the week) but to make sure that each slot has the same total exposure throughout the year. This is something that using days of week wouldn't achieve. For example, public holidays happen more frequently on Mondays and Fridays, which would make them underrepresented in the yearly total.  
 
 Each day number has a schedule of activities associated to it. For example, library can be on Day 1, gym on Day 2, music on Day 3.  
 Families might want to know what's on agenda today!  
