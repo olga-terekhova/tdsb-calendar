@@ -48,6 +48,7 @@ I recommend creating a separate calendar for each file:
 **Important!** Create new dedicated calendars to import the .ics to, don't use existing ones. There are many events in these sequences, it would be extremely hard to delete them one-by-one from a non-dedicated calendar if needed. On the other hand, it's easy to delete a dedicated calendar and re-create it. 
 
 The result in Google Calendar shows the three calendars toggled on:  
-<img src="pics/tdsb-schedule-example.png" width="252">
-
+<p align="center">
+<img src="pics/tdsb-schedule-example.png" width="600">
+</p>  
 
