@@ -54,3 +54,5 @@ The result in Google Calendar shows the three calendars toggled on:
 <img src="pics/tdsb-schedule-example.png" width="600">
 </p>  
 
+## Style_PDF_Calendar.ipynb  
+A notebook that cleans up the PDF printout produced by Google Calendar. It removes the names of the calendars, timezone, adds colored background to the weekend, and adds a heading picture.  
