@@ -56,3 +56,6 @@ The result in Google Calendar shows the three calendars toggled on:
 
 ## Style_PDF_Calendar.ipynb  
 A notebook that cleans up the PDF printout produced by Google Calendar. It removes the names of the calendars, timezone, adds colored background to the weekend, and adds a heading picture.  
+<p align="center">
+  <img src="pics/tdsb-calendar-styled.png" width="500">
+</p>  
