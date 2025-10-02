@@ -59,3 +59,12 @@ A notebook that cleans up the PDF printout produced by Google Calendar. It remov
 <p align="center">
   <img src="pics/tdsb-calendar-styled.png" width="500">
 </p>  
+
+## Integrate_Calendar_Template_PDF.ipynb
+A notebook that integrates a set of ICS calendar files into a monthly calendar template provided as a PDF file.  
+<p align="center">
+  <img src="pics/calendar-pdf-integrated.png" width="500">
+</p>  
+
+## Integrate_Calendar_Template_PPTX.ipynb
+A notebook that integrates a set of ICS calendar files into a monthly calendar template provided as a PPTX (PowerPoint) file. 
